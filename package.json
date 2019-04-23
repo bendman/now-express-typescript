@@ -1,0 +1,24 @@
+{
+  "name": "now-express-ts-example",
+  "version": "1.0.0",
+  "description": "Example of a ZEIT now project using Typescript and an Express router that works locally and deployed.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node .",
+    "prestart": "npm run build",
+    "dev": "ts-node-dev --respawn ./src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Duncan <ben@cascadiaconcepts.com> (http://benduncan.me)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "4.16.1",
+    "@types/node": "11.13.6",
+    "ts-node-dev": "1.0.0-pre.32",
+    "typescript": "3.4.4"
+  },
+  "dependencies": {
+    "express": "4.16.4"
+  }
+}

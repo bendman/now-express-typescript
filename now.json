@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "name": "express-typescript-example",
+  "env": {
+    "IS_NOW": "true"
+  },
+	"builds": [{ "src": "dist/**", "use": "@now/node" }],
+	"routes": [{ "src": "/(.*)", "dest": "/dist/index.js" }]
+ }

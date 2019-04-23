@@ -9,8 +9,8 @@ otherRouter.get('/', (req: express.Request, res: express.Response) => {
 });
 
 otherRouter.get('/slow', async (req: express.Request, res: express.Response) => {
-  await sleep(5000);
-  res.send('This should have taking 5 seconds');
+  await sleep(3000);
+  res.send('This should have taken 3 seconds');
 });
 
 otherRouter.get('/fast', (req: express.Request, res: express.Response) => {

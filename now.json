@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "express-typescript-example",
+  "alias": "express-typescript-example.now.sh",
   "env": {
     "IS_NOW": "true"
   },
